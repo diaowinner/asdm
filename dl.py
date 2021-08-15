@@ -32,8 +32,7 @@ print('Download scratch-desktop for windows done.')
 
 fl = open("scratch-version","w+")
 fl.write("")
-getVersion = requests.get('https://downloads.scratch.mit.edu/desktop/Scratch%20Setup.exe', allow_redirects=False)
-version = getVersion.headers['location'].split('%20')[1]
-fl.write(version)
+version = str(int(time.time()))
+fl.write()
 fl.close()
 print('Get version done. version :', version, '. Cost',getVersion.elapsed.total_seconds(),'sec.')
