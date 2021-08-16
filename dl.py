@@ -20,16 +20,24 @@ print('''
 if not os.path.exists('output'):
     os.mkdir('output')
 
-# Download 'Scratch Setup.exe' for Windows
+# Download AIDB
 r = requests.get('https://www.cns11643.gov.tw/AIDB/Open_Data.zip', stream=True)
 
 with open(r'./output/Open_Data.zip', "wb") as f:
     for chunk in r.iter_content(chunk_size=512):
         f.write(chunk)
 
-print('Download scratch-desktop for windows done.')
+print('Download AIDB done.')
 
-# Get Scratch Version
+# Download CSV
+r = requests.get('https://www.cns11643.gov.tw/AIDB/OpenDataFilesList.csv', stream=True)
+
+with open(r'./output/OpenDataFilesList.csv', "wb") as f:
+    for chunk in r.iter_content(chunk_size=512):
+        f.write(chunk)
+
+print('Download File list done.')
+# Get timestamp
 
 fl = open("scratch-version","w+")
 fl.write("")
