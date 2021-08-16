@@ -1,3 +1,3 @@
 # asdm  
-Auto Scratch Desktop Mirror  
-By waterblock79, under Scratch Bar Open Source.
+Auto ~~Scratch~~ CNS11643 AIDB Desktop Mirror  
+By waterblock79 *& diaowinner*, under Scratch Bar Open Source.
