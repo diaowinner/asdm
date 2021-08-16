@@ -3,7 +3,7 @@ name: Mirror and push
 on: 
   workflow_dispatch:
   schedule:
-    - cron:  '31 23 * * 1'
+    - cron:  '30 2 * * 2'
 
 jobs:
   build:
